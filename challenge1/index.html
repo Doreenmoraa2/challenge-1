@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Lexend+Deca">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      font-size: 15px;
+      font-family:' https://fonts.google.com/specimen/Inter';
+      font-weight: 400, 700;
+      background-color: hsl(233, 47%, 7%);
+    }
+
+    .content-main{
+      width: 100%;
+      height: 100vh;
+    
+      display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    }
+    .content{
+      width: 70%;
+      height: 60%;
+      display: flex;
+      background-color: hsl(244, 38%, 16%);
+      border-radius: 10px;
+      margin-top: 50px;
+      
+    }
+
+
+
+/* Control the left side */
+.left {
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+ 
+}
+
+/* Control the right side */
+.right {
+  background-color: hsl(277, 64%, 61%);
+  width:50%
+
+}
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+}
+
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: horizontal;
+  font-family: Lexend Deca;
+}
+span{
+  color:hsl(277, 64%, 61%);
+}
+.float{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#float_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.stat{
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+}
+.heading{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: Lexend Deca;
+}
+.my-image{
+  width:100%;
+  height:100%;
+  opacity: 30%;
+}
+  </style>
+</head>
+<body>
+  <div class="content-main">
+    <div class="content">
+  <div class="left">
+    <div class="one">
+  <h1>Get <span>insights</span> that help <br> your business grow.</h1>
+      </div>
+      <div class="two">
+  <p>Discover the benefits of data analytics and make <br> better decisions regarding revenue, customer <br> 
+  experience, and overall efficiency.</p>
+  </div>
+  
+<div id="float_container">
+  <div class="float">
+    <b><label class="stat">10K+</label></b>
+    <label class="heading">COMPANIES</label>
+  </div>
+  <div class="float">
+    <b><label class="stat">314</label></b>
+    <label class="heading">TEMPLATES</label>
+  </div>
+  <div class="float">
+    <b><label class="stat">12M+</label></b>
+    <label class="heading">QUERIES</label>
+  </div>
+  
+</div>
+  
+</div>
+>
+
+  <div class="right">
+  <img  src="images/image-header-desktop.jpg" class="my-image">
+  </div>
+
+
+</div>
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Doreen Moraa</a>.
+</div>
+
+</body>
+</html>
